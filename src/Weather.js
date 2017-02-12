@@ -8,7 +8,7 @@ const Weather = observer(class Weather extends Component {
     super(props)
     }
     componentDidMount() {
-        $.get("http://ipinfo.io", (response)=>{
+        $.get("https://ipinfo.io", (response)=>{
                 this.props.store.update(response)
                 }, "jsonp");
         }
